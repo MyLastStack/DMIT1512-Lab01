@@ -9,9 +9,10 @@ public class MakePlanet : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         // Make the planet when the camera starts in the scene.
-        GameObject p = Instantiate(planet, new Vector2(3f, 2f), Quaternion.identity);
-        p.transform.localScale = new Vector2(3f, 3f);
+        p = Instantiate(planet, new Vector2(3f, 2f), Quaternion.identity);
+        p.transform.localScale = Vector2.one * 3f;
     }
 
     // Update is called once per frame
