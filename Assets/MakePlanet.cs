@@ -11,6 +11,9 @@ public class MakePlanet : MonoBehaviour
     {
 
         // Make the planet when the camera starts in the scene.
+        Camera cam = Camera.main;
+        cam
+
         p = Instantiate(planet, new Vector2(3f, 2f), Quaternion.identity);
         p.transform.localScale = Vector2.one * 3f;
     }
