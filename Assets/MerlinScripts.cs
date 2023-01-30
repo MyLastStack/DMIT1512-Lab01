@@ -7,7 +7,9 @@ using UnityEngine.Rendering;
 
 public class MerlinScripts : MonoBehaviour
 {
-    [SerializeField] GameObject Sploosh;
+    [SerializeField] GameObject merlin;
+    [SerializeField] GameObject sploosh;
+    GameObject splooshChild;
 
     Vector2 ScreenPos;
     Vector2 Direction = new(1, 0);
@@ -15,7 +17,7 @@ public class MerlinScripts : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ScreenSize = new(1920, 1080);
+        
     }
 
     void FixedUpdate()
@@ -30,9 +32,9 @@ public class MerlinScripts : MonoBehaviour
 
         if (Keyboard.current.spaceKey.wasReleasedThisFrame)
         {
-
+            splooshChild = Instantiate(sploosh, new Vector3(merlin.transform.position.x, merlin.transform.position.y + 0.8f, 0), merlin.transform.rotation) as GameObject;
         }
-        if (Keyboard.current.aKey.isPressed)
+        if (Keyboard.current.aKey.isPressed && gameObject.transform.position.x >= -8f)
         {
             transform.Translate(Vector2.left * 5f * Time.deltaTime);
             if (!sr.flipX)
@@ -40,7 +42,7 @@ public class MerlinScripts : MonoBehaviour
                 sr.flipX = true;
             }
         }
-        if (Keyboard.current.dKey.isPressed)
+        if (Keyboard.current.dKey.isPressed && gameObject.transform.position.x <= 8f)
         {
             transform.Translate(Vector2.right * 5f * Time.deltaTime);
             if (sr.flipX)
