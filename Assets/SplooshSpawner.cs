@@ -26,9 +26,9 @@ public class SplooshSpawner : MonoBehaviour
             Destroy(SplooshLaser);
 
         }
-        if ()
+        if (collision.gameObject.tag == "LaserDestroyer")
         {
-
+            Destroy(SplooshLaser);
         }
     }
 }
