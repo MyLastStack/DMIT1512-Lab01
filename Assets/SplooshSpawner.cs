@@ -24,10 +24,11 @@ public class SplooshSpawner : MonoBehaviour
         {
             Destroy(collision.gameObject);
             Destroy(SplooshLaser);
-        }
-        //if ()
-        //{
 
-        //}
+        }
+        if ()
+        {
+
+        }
     }
 }
