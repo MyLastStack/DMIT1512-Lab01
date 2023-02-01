@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6870493590013923652}
   - component: {fileID: 1284321944061467063}
   - component: {fileID: 803010631638619416}
+  - component: {fileID: 5684610156503011122}
   m_Layer: 0
   m_Name: dragon 1
   m_TagString: Enemy
@@ -133,3 +134,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5684610156503011122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6870493590013923653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b11e01957f67c41b715d1a7ea38224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
