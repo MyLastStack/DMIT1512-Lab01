@@ -18,4 +18,17 @@ public class FireballScript : MonoBehaviour
     {
         transform.Translate(new Vector3(speed * Time.deltaTime, 0, 0));
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Merlin")
+        {
+            Destroy(collision.gameObject);
+            Destroy(Fireball);
+        }
+        if (collision.gameObject.tag == "LaserDestroyer")
+        {
+            Destroy(Fireball);
+        }
+    }
 }

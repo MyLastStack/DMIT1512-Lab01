@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1284321944061467063}
   - component: {fileID: 803010631638619416}
   - component: {fileID: 5684610156503011122}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Dragon
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!114 &5684610156503011122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -147,4 +147,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Fireball: {fileID: 422143754261748121, guid: 3c0c12336f87c684ba73eeb704beaad3, type: 3}
-  upToCount: 2500
+  upToCount: 150
+  attack: 0

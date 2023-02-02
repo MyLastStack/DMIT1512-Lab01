@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine;
-using UnityEditor.Tilemaps;
+using UnityEngine.Tilemaps;
 using UnityEngine.Rendering;
 
 public class MerlinScripts : MonoBehaviour
