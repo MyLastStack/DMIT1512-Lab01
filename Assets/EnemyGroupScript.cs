@@ -39,7 +39,7 @@ public class EnemyGroupScript : MonoBehaviour
         groupDirection *= -1;
 
         Vector3 position = this.transform.position;
-        position.y -= 1;
+        position.y -= 0.25f;
         this.transform.position = position;
     }
 }

@@ -7,6 +7,10 @@ TagManager:
   - Enemy
   - LaserDestroyer
   - Merlin
+  - Fireball
+  - Splooshball
+  - Barrier
+  - Projectile
   layers:
   - Default
   - TransparentFX

@@ -5,7 +5,7 @@ using UnityEngine;
 public class SplooshSpawner : MonoBehaviour
 {
     [SerializeField] GameObject SplooshLaser;
-    [SerializeField] float speed = 3;
+    [SerializeField] float speed = 5;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +27,10 @@ public class SplooshSpawner : MonoBehaviour
 
         }
         if (collision.gameObject.tag == "LaserDestroyer")
+        {
+            Destroy(SplooshLaser);
+        }
+        if (collision.gameObject.tag == "Barrier")
         {
             Destroy(SplooshLaser);
         }
