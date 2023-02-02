@@ -146,3 +146,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70b11e01957f67c41b715d1a7ea38224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Fireball: {fileID: 422143754261748121, guid: 3c0c12336f87c684ba73eeb704beaad3, type: 3}
+  upToCount: 2500
